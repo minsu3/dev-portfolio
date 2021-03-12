@@ -1,24 +1,14 @@
 import React from "react";
+import Header from "../src/components/Header";
+import routes from "../src/routes";
 
-function App() {
+const App = () => {
   return (
-    <div className="container">
-      <div className="navigation">
-        {/* <img src={logo} className="logo" alt="Logo Image" /> */}
-        <div className="navigation-sub">
-          <a href="" className="item">
-            Projects
-          </a>
-          <a href="" className="item">
-            Articles
-          </a>
-          <a href="" className="item">
-            About
-          </a>
-        </div>
-      </div>
+    <div>
+      <Header />
+      {routes}
     </div>
   );
-}
+};
 
 export default App;
