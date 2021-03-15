@@ -1,17 +1,16 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
-import Connect from "../components/Connect";
 
-import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
-import InputGroup from "react-bootstrap/InputGroup";
+import Button from "react-bootstrap/Button";
 
 import headshot from "../images/photoshoot.JPG";
+
 import mainbanner from "../images/mainbanner.jpeg";
 import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
 import twitter from "../images/twitter.png";
+import angellist from "../images/angellist.png";
 
 import logohtml from "../images/fulls/html-5.png";
 import css from "../images/fulls/css.png";
@@ -32,30 +31,43 @@ import digitalocean from "../images/fulls/digitalocean.png";
 
 const Home = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.main}>
         <img src={mainbanner} alt="" />
         <div className={styles.title}>Minsu Kim</div>
         <div className={styles.sub}>Software Developer</div>
         <div className={styles.socialLogo}>
-          <img src={linkedin} alt="" />
-          <img src={github} alt="" />
-          <img src={twitter} alt="" />
+          <a href="https://www.linkedin.com/in/minsukim97/" target="blank">
+            <img src={linkedin} alt="LinkedIn Profile" />
+          </a>
+          <a href="https://github.com/minsu3" target="blank">
+            <img src={github} alt="Github Profile" />
+          </a>
+          <a href="https://twitter.com/kmnsuu" target="blank">
+            <img src={twitter} alt="Twitter Profile" />
+          </a>
+          <a href="https://angel.co/u/minsu-kim-5" target="blank">
+            <img src={angellist} alt="AngelList Profile" />
+          </a>
         </div>
       </div>
 
       <div className={styles.content}>
         <div className={styles.leftcolumn}>
           <div className={styles.projects}>
-            <h2>BikeList</h2>
-            <h5>eCommerce Website</h5>
+            <h2>BikeList - eCommerce Website</h2>
+            <h5>
+              <a href="https://github.com/minsu3/bikelist" target="blank">
+                View Code
+              </a>{" "}
+              | <a href="https://github.com/minsu3/bikelist">Demo</a>
+            </h5>
             <div className={styles.fakeimg}>Image</div>
-            <p>Some text..</p>
+            <br />
             <p>
-              Sunt in culpa qui officia deserunt mollit anim id est laborum
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco.
+              An eCommerce web application where users can login and choose the
+              bicycle they are looking for and find the available bike
+              retailers.
             </p>
           </div>
 
@@ -63,12 +75,14 @@ const Home = () => {
             <h2>Habitico</h2>
             <h5>Productivity App Bundle</h5>
             <div className={styles.fakeimg}>Image</div>
-            <p>Some text..</p>
+            <br />
             <p>
-              Sunt in culpa qui officia deserunt mollit anim id est laborum
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco.
+              "You'll like seeing that chain, especially when you get a few
+              weeks under your belt." - Jerry Seinfeld
+              <br />A productivity app inspired by the comedian's "Don't break
+              the chain" technique, allows users to track and make streaks of
+              their habits and long term goals. Habitico operates as a bundle of
+              all the productivity hacks that I found most effective.
             </p>
           </div>
 
@@ -76,12 +90,15 @@ const Home = () => {
             <h2>How Dating Works</h2>
             <h5>Attraction and Dating Coach - Blair Meehan (Client) </h5>
             <div className={styles.fakeimg}>Image</div>
-            <p>Some text..</p>
+            <br />
             <p>
-              Sunt in culpa qui officia deserunt mollit anim id est laborum
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco.
+              Blair is a dating and relationship coach who helps men achieve
+              their ideal dating lives. His free Dating Bootcamp video series
+              teaches the essentials of getting a date, getting a girlfriend,
+              and creating a healthy relationship for any man to meet, attract,
+              and keep the woman of his dreams. He publishes additional dating
+              advice and answers viewer questions on his YouTube channel, blog,
+              podcast, and social media.
             </p>
           </div>
 
@@ -107,13 +124,18 @@ const Home = () => {
               and various web frameworks/APIs. I have experience in working for
               startups and satisfying client's needs as a freelance developer.
             </p>
-            <Button variant="success">
-              <strong>Resumé</strong>
-            </Button>
+            <a
+              href="https://drive.google.com/file/d/16AZHB9q3DeKSKAAoXwztCH0RSHwWXNj5/view?usp=sharing"
+              target="blank"
+            >
+              <Button variant="success">
+                <strong>Resumé</strong>
+              </Button>
+            </a>
           </div>
 
           <div className={styles.technology}>
-            <h3>Technology</h3>
+            <h3 style={{ marginBottom: "30px" }}>Technology</h3>
             <div className={styles.skillsimg}>
               <div className={styles.logos}>
                 <img src={logohtml} alt="" />
@@ -125,7 +147,7 @@ const Home = () => {
               </div>
               <div className={styles.logos}>
                 <img src={javascript} alt="" />
-                <p>JavaScript</p>
+                <p>JavaScript (ES6)</p>
               </div>
               <div className={styles.logos}>
                 <img src={react} alt="" />
@@ -192,32 +214,44 @@ const Home = () => {
           </div>
 
           <div className={styles.social}>
-            <h3>Contact Me</h3>
-            <Form>
-              <Form.Group>
-                <Form.Label>Full Name</Form.Label>
-                <Form.Control />
-              </Form.Group>
-              <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
+            <div>
+              <h3 style={{ marginBottom: "20px" }}>Let's Connect</h3>
+              <p>
+                <strong>Email: </strong>kim97minsu@gmail.com
+              </p>
+              <p>
+                <strong>LinkedIn: </strong>
+                https://www.linkedin.com/in/minsukim97/
+              </p>
+              <p>
+                <strong>Github: </strong>https://github.com/minsu3
+              </p>
+              <Form>
+                <Form.Group>
+                  <Form.Label>Full Name</Form.Label>
+                  <Form.Control />
+                </Form.Group>
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="email" placeholder="Enter email" />
+                </Form.Group>
 
-              <div className="mb-3">
-                <Form.File id="formcheck-api-regular">
-                  <Form.File.Label>Upload File</Form.File.Label>
-                  <Form.File.Input />
-                </Form.File>
-              </div>
+                <div className="mb-3">
+                  <Form.File id="formcheck-api-regular">
+                    <Form.File.Label>Upload File</Form.File.Label>
+                    <Form.File.Input />
+                  </Form.File>
+                </div>
 
-              <Form.Group controlId="exampleForm.ControlTextarea1">
-                <Form.Label>Send a Message</Form.Label>
-                <Form.Control as="textarea" rows={3} />
-              </Form.Group>
-              <Button variant="primary" type="submit">
-                Submit
-              </Button>
-            </Form>
+                <Form.Group controlId="exampleForm.ControlTextarea1">
+                  <Form.Label>Send a Message</Form.Label>
+                  <Form.Control as="textarea" rows={3} />
+                </Form.Group>
+                <Button variant="primary" type="submit">
+                  Submit
+                </Button>
+              </Form>
+            </div>
           </div>
         </div>
       </div>
