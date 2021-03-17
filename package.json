@@ -1,5 +1,5 @@
 {
-  "homepage": "http://minsu3.github.io/dev-portfolio",
+  "homepage": "https://minsu3.github.io/dev-portfolio",
   "name": "dev-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -13,10 +13,10 @@
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "gh-pages": "^2.2.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -41,7 +41,7 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "Minsu's Portfolio",
   "main": "index.js",
   "devDependencies": {
     "gh-pages": "^2.2.0"
