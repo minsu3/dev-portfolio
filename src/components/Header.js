@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="/dev-portfolio" style={{ fontSize: "28px" }}>
+        <Navbar.Brand href="/" style={{ fontSize: "28px" }}>
           MK
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
