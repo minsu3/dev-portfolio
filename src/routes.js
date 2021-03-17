@@ -8,7 +8,7 @@ import Connect from "../src/components/Connect";
 export default (
   <div>
     <Switch>
-      <Route exact path="/">
+      <Route path="/dev-portfolio">
         <Home />
       </Route>
       <Route path="/about">
