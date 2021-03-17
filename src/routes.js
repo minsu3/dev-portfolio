@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router";
+import { Route, Redirect, Switch } from "react-router";
 import Home from "../src/components/Home";
 import Projects from "../src/components/Projects";
 import About from "../src/components/About";
@@ -11,6 +11,7 @@ export default (
       <Route exact path="/">
         <Home />
       </Route>
+      <Redirect from="/" exact to="/home" />
       <Route path="/about">
         <About />
       </Route>
