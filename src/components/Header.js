@@ -14,7 +14,7 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="pull-right">
             <Nav.Link
-              href="/about"
+              href="/dev-portfolio/about"
               style={{
                 fontSize: "18px",
                 paddingRight: "20px",
@@ -24,7 +24,7 @@ const Header = () => {
               About
             </Nav.Link>
             <Nav.Link
-              href="/projects"
+              href="/dev-portfolio/projects"
               style={{
                 fontSize: "18px",
                 paddingRight: "20px",
@@ -34,7 +34,7 @@ const Header = () => {
               Projects
             </Nav.Link>
             <Nav.Link
-              href="/connect"
+              href="/dev-portfolio/connect"
               style={{
                 fontSize: "18px",
                 paddingRight: "20px",

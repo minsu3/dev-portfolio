@@ -12,13 +12,13 @@ export default (
         <Home />
       </Route>
       <Redirect from="/" exact to="/home" />
-      <Route path="/about">
+      <Route path="/dev-portfolio/about">
         <About />
       </Route>
-      <Route path="/projects">
+      <Route path="/dev-portfolio/projects">
         <Projects />
       </Route>
-      <Route path="/connect">
+      <Route path="/dev-portfolio/connect">
         <Connect />
       </Route>
     </Switch>
