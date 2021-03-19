@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Redirect, Switch } from "react-router";
+import { Route, Switch } from "react-router";
 import Home from "../src/components/Home";
 import Projects from "../src/components/Projects";
 import About from "../src/components/About";
@@ -11,14 +11,13 @@ export default (
       <Route exact path="/">
         <Home />
       </Route>
-      <Redirect from="/" exact to="/home" />
-      <Route path="/dev-portfolio/about">
+      <Route path="/about">
         <About />
       </Route>
-      <Route path="/dev-portfolio/projects">
+      <Route path="/projects">
         <Projects />
       </Route>
-      <Route path="/dev-portfolio/connect">
+      <Route path="/connect">
         <Connect />
       </Route>
     </Switch>
