@@ -5,7 +5,6 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 import headshot from "../images/photoshoot.JPG";
-
 import mainbanner from "../images/mainbanner.jpeg";
 import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
@@ -73,7 +72,13 @@ const Home = () => {
 
           <div className={styles.projects}>
             <h2>Habitico</h2>
-            <h5>Productivity App Bundle</h5>
+            <h5>Productivity App</h5>
+            <h5>
+              <a href="https://github.com/minsu3/HabiticoWebApp" target="blank">
+                View Code
+              </a>{" "}
+              | <a href="https://github.com/minsu3/HabiticoWebApp">Demo</a>
+            </h5>
             <div className={styles.fakeimg}>Image</div>
             <br />
             <p>
@@ -89,6 +94,12 @@ const Home = () => {
           <div className={styles.projects}>
             <h2>How Dating Works</h2>
             <h5>Attraction and Dating Coach - Blair Meehan (Client) </h5>
+            <h5>
+              <a href="https://github.com/minsu3/howdatingworks" target="blank">
+                View Code
+              </a>{" "}
+              | <a href="https://github.com/minsu3/howdatingworks">Demo</a>
+            </h5>
             <div className={styles.fakeimg}>Image</div>
             <br />
             <p>
