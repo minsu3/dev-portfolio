@@ -266,6 +266,18 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div
+        style={{
+          textAlign: "center",
+          width: "100%",
+          backgroundColor: "white",
+          height: "30px",
+          display: "flex",
+          bottom: 0,
+        }}
+      >
+        <div style={{ color: "white" }}>Footer</div>
+      </div>
     </div>
   );
 };
