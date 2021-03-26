@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
+import cycling from "../images/cycling.gif";
 import headshot from "../images/photoshoot.JPG";
 import mainbanner from "../images/mainbanner.jpeg";
 import linkedin from "../images/linkedin.png";
@@ -54,20 +55,22 @@ const Home = () => {
       <div className={styles.content}>
         <div className={styles.leftcolumn}>
           <div className={styles.projects}>
-            <h2>BikeList - eCommerce Website</h2>
+            <h2>BikeList</h2>
+            <h5>eCommerce Website</h5>
             <h5>
               <a href="https://github.com/minsu3/bikelist" target="blank">
                 View Code
               </a>{" "}
               | <a href="https://github.com/minsu3/bikelist">Demo</a>
             </h5>
-            <div className={styles.fakeimg}>Image</div>
-            <br />
-            <p>
-              An eCommerce web application where users can login and choose the
-              bicycle they are looking for and find the available bike
-              retailers.
-            </p>
+            <div className={styles.projectContainer}>
+              <img src={cycling} alt="" className={styles.projectgif} />
+              <p className={styles.projectdescription}>
+                An eCommerce web application where users can login and choose
+                the bicycle they are looking for and find the available bike
+                retailers.
+              </p>
+            </div>
           </div>
 
           <div className={styles.projects}>
@@ -79,16 +82,18 @@ const Home = () => {
               </a>{" "}
               | <a href="https://github.com/minsu3/HabiticoWebApp">Demo</a>
             </h5>
-            <div className={styles.fakeimg}>Image</div>
-            <br />
-            <p>
-              "You'll like seeing that chain, especially when you get a few
-              weeks under your belt." - Jerry Seinfeld
-              <br />A productivity app inspired by the comedian's "Don't break
-              the chain" technique, allows users to track and make streaks of
-              their habits and long term goals. Habitico operates as a bundle of
-              all the productivity hacks that I found most effective.
-            </p>
+            <div className={styles.projectContainer}>
+              <div className={styles.projectgif}>image</div>
+              <br />
+              <p className={styles.projectdescription}>
+                "You'll like seeing that chain, especially when you get a few
+                weeks under your belt." - Jerry Seinfeld
+                <br />A productivity app inspired by the comedian's "Don't break
+                the chain" technique, allows users to track and make streaks of
+                their habits and long term goals. Habitico operates as a bundle
+                of all the productivity hacks that I found most effective.
+              </p>
+            </div>
           </div>
 
           <div className={styles.projects}>
