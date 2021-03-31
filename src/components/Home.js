@@ -5,10 +5,12 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 import cycling from "../images/cycling.gif";
+import habitico from "../images/habitico.jpeg";
 import headshot from "../images/photoshoot.JPG";
 import mainbanner from "../images/mainbanner.jpeg";
 import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
+import tab from "../images/tab.png";
 import twitter from "../images/twitter.png";
 import angellist from "../images/angellist.png";
 
@@ -55,35 +57,53 @@ const Home = () => {
       <div className={styles.content}>
         <div className={styles.leftcolumn}>
           <div className={styles.projects}>
-            <h2>BikeList</h2>
+            <div className={styles.titleWrapper}>
+              <h2>CycleList</h2>
+              <div className={styles.viewProject}>
+                <a href="https://github.com/minsu3/cyclelist" target="blank">
+                  <img src={github} alt="" style={{ width: "35px" }} />
+                </a>{" "}
+                <a href="https://github.com/minsu3/cyclelist" target="blank">
+                  <img src={tab} alt="" />
+                </a>
+              </div>
+            </div>
             <h5>eCommerce Website</h5>
-            <h5>
-              <a href="https://github.com/minsu3/bikelist" target="blank">
-                View Code
-              </a>{" "}
-              | <a href="https://github.com/minsu3/bikelist">Demo</a>
-            </h5>
+
             <div className={styles.projectContainer}>
               <img src={cycling} alt="" className={styles.projectgif} />
               <p className={styles.projectdescription}>
-                An eCommerce web application where users can login and choose
-                the bicycle they are looking for and find the available bike
-                retailers.
+                A passion project A full stack eCommerce web application where
+                users can login and choose the bicycle they are looking for and
+                find the available bike retailers. This project incorporates
+                Google Maps API to locate the bicycle retailers and successfully
+                authenticates users onto the database.
               </p>
             </div>
           </div>
 
           <div className={styles.projects}>
-            <h2>Habitico</h2>
+            <div className={styles.titleWrapper}>
+              <h2>Habitico</h2>
+              <div className={styles.viewProject}>
+                <a
+                  href="https://github.com/minsu3/HabiticoWebApp"
+                  target="blank"
+                >
+                  <img src={github} alt="" style={{ width: "35px" }} />
+                </a>{" "}
+                <a
+                  href="https://github.com/minsu3/HabiticoWebApp"
+                  target="blank"
+                >
+                  <img src={tab} alt="" />
+                </a>
+              </div>
+            </div>
             <h5>Productivity App</h5>
-            <h5>
-              <a href="https://github.com/minsu3/HabiticoWebApp" target="blank">
-                View Code
-              </a>{" "}
-              | <a href="https://github.com/minsu3/HabiticoWebApp">Demo</a>
-            </h5>
+
             <div className={styles.projectContainer}>
-              <div className={styles.projectgif}>image</div>
+              <img src={habitico} alt="" className={styles.projectgif} />
               <br />
               <p className={styles.projectdescription}>
                 "You'll like seeing that chain, especially when you get a few
@@ -97,25 +117,39 @@ const Home = () => {
           </div>
 
           <div className={styles.projects}>
-            <h2>How Dating Works</h2>
-            <h5>Attraction and Dating Coach - Blair Meehan (Client) </h5>
-            <h5>
-              <a href="https://github.com/minsu3/howdatingworks" target="blank">
-                View Code
-              </a>{" "}
-              | <a href="https://github.com/minsu3/howdatingworks">Demo</a>
-            </h5>
-            <div className={styles.fakeimg}>Image</div>
-            <br />
-            <p>
-              Blair is a dating and relationship coach who helps men achieve
-              their ideal dating lives. His free Dating Bootcamp video series
-              teaches the essentials of getting a date, getting a girlfriend,
-              and creating a healthy relationship for any man to meet, attract,
-              and keep the woman of his dreams. He publishes additional dating
-              advice and answers viewer questions on his YouTube channel, blog,
-              podcast, and social media.
-            </p>
+            <div className={styles.titleWrapper}>
+              <h2>How Dating Works</h2>
+              <div className={styles.viewProject}>
+                <a
+                  href="https://github.com/minsu3/howdatingworks"
+                  target="blank"
+                >
+                  <img src={github} alt="" style={{ width: "35px" }} />
+                </a>{" "}
+                <a
+                  href="https://github.com/minsu3/howdatingworks"
+                  target="blank"
+                >
+                  <img src={tab} alt="" />
+                </a>
+              </div>
+            </div>
+
+            <h5>Freelance for Client: Blair Meehan </h5>
+
+            <div className={styles.projectContainer}>
+              <div className={styles.projectgif}>image</div>
+              <br />
+              <p className={styles.projectdescription}>
+                Blair is a dating and relationship coach who helps men achieve
+                their ideal dating lives. His free Dating Bootcamp video series
+                teaches the essentials of getting a date, getting a girlfriend,
+                and creating a healthy relationship for any man to meet,
+                attract, and keep the woman of his dreams. He publishes
+                additional dating advice and answers viewer questions on his
+                YouTube channel, blog, podcast, and social media.
+              </p>
+            </div>
           </div>
 
           <Button variant="light">
@@ -141,7 +175,7 @@ const Home = () => {
               startups and satisfying client's needs as a freelance developer.
             </p>
             <a
-              href="https://drive.google.com/file/d/16AZHB9q3DeKSKAAoXwztCH0RSHwWXNj5/view?usp=sharing"
+              href="https://drive.google.com/file/d/1A3-v0ji9tN1FRlaWokD6JuIBkcW9NtZJ/view?usp=sharing"
               target="blank"
             >
               <Button variant="success">
@@ -270,18 +304,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div
-        style={{
-          textAlign: "center",
-          width: "100%",
-          backgroundColor: "white",
-          height: "30px",
-          display: "flex",
-          bottom: 0,
-        }}
-      >
-        <div style={{ color: "white" }}>Footer</div>
       </div>
     </div>
   );
