@@ -273,16 +273,6 @@ const Home = () => {
             <div className={styles.social}>
               <div>
                 <h3 style={{ marginBottom: "20px" }}>Let's Connect</h3>
-                <p>
-                  <strong>Email: </strong>kim97minsu@gmail.com
-                </p>
-                <p>
-                  <strong>LinkedIn: </strong>
-                  https://www.linkedin.com/in/minsukim97/
-                </p>
-                <p>
-                  <strong>Github: </strong>https://github.com/minsu3
-                </p>
                 <Form>
                   <Form.Group>
                     <Form.Label>Full Name</Form.Label>
@@ -310,6 +300,9 @@ const Home = () => {
                 </Form>
               </div>
             </div>
+          </div>
+          <div style={{ textAlign: "center", color: "white" }}>
+            &copy; Minsu Kim All Rights Reserved.
           </div>
         </div>
       </div>
