@@ -78,11 +78,11 @@ const Home = () => {
               <div className={styles.projectContainer}>
                 <img src={cycling} alt="" className={styles.projectgif} />
                 <p className={styles.projectdescription}>
-                  A passion project A full stack eCommerce web application where
-                  users can login and choose the bicycle they are looking for
-                  and find the available bike retailers. This project
-                  incorporates Google Maps API to locate the bicycle retailers
-                  and successfully authenticates users onto the database.
+                  A full stack eCommerce web application where users can login
+                  and choose the bicycle they are looking for and find the
+                  available bike retailers. This project incorporates Google
+                  Maps API to locate the bicycle retailers and successfully
+                  authenticates users onto the database.
                 </p>
               </div>
             </div>
