@@ -11,7 +11,7 @@ const Header = () => {
           MK
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        {/* <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="pull-right">
             <Nav.Link
               href="/dev-portfolio/about"
@@ -44,7 +44,7 @@ const Header = () => {
               Connect
             </Nav.Link>
           </Nav>
-        </Navbar.Collapse>
+        </Navbar.Collapse> */}
       </Navbar>
     </div>
   );

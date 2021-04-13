@@ -5,13 +5,14 @@ import styles from "../styles/Home.module.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-import cycling from "../images/cycling.gif";
+import cyclist from "../images/cyclist.jpeg";
 import habitico from "../images/habitico.jpeg";
+import hdw from "../images/hdw.png";
 import headshot from "../images/photoshoot.JPG";
 import mainbanner from "../images/mainbanner.jpeg";
 import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
-import tab from "../images/tab.png";
+
 import twitter from "../images/twitter.png";
 import angellist from "../images/angellist.png";
 
@@ -63,32 +64,6 @@ const Home = () => {
           <div className={styles.leftcolumn}>
             <div className={styles.projects}>
               <div className={styles.titleWrapper}>
-                <h2>CycleList</h2>
-                <div className={styles.viewProject}>
-                  <a href="https://github.com/minsu3/cyclelist" target="blank">
-                    <img src={github} alt="" style={{ width: "35px" }} />
-                  </a>{" "}
-                  <a href="https://github.com/minsu3/cyclelist" target="blank">
-                    <img src={tab} alt="" />
-                  </a>
-                </div>
-              </div>
-              <h5>eCommerce Website</h5>
-
-              <div className={styles.projectContainer}>
-                <img src={cycling} alt="" className={styles.projectgif} />
-                <p className={styles.projectdescription}>
-                  A full stack eCommerce web application where users can login
-                  and choose the bicycle they are looking for and find the
-                  available bike retailers. This project incorporates Google
-                  Maps API to locate the bicycle retailers and successfully
-                  authenticates users onto the database.
-                </p>
-              </div>
-            </div>
-
-            <div className={styles.projects}>
-              <div className={styles.titleWrapper}>
                 <h2>Habitico</h2>
                 <div className={styles.viewProject}>
                   <a
@@ -97,12 +72,12 @@ const Home = () => {
                   >
                     <img src={github} alt="" style={{ width: "35px" }} />
                   </a>{" "}
-                  <a
+                  {/* <a
                     href="https://github.com/minsu3/HabiticoWebApp"
                     target="blank"
                   >
                     <img src={tab} alt="" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <h5>Productivity App</h5>
@@ -132,19 +107,19 @@ const Home = () => {
                   >
                     <img src={github} alt="" style={{ width: "35px" }} />
                   </a>{" "}
-                  <a
+                  {/* <a
                     href="https://github.com/minsu3/howdatingworks"
                     target="blank"
                   >
                     <img src={tab} alt="" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
 
               <h5>Freelance for Client: Blair Meehan </h5>
 
               <div className={styles.projectContainer}>
-                <div className={styles.projectgif}>image</div>
+                <img src={hdw} alt="" className={styles.projectgif} />
                 <br />
                 <p className={styles.projectdescription}>
                   Blair is a dating and relationship coach who helps men achieve
@@ -158,7 +133,35 @@ const Home = () => {
               </div>
             </div>
 
-            <Button variant="light">
+            <div className={styles.projects}>
+              <div className={styles.titleWrapper}>
+                <h2>CycleList</h2>
+                <div className={styles.viewProject}>
+                  <a href="https://github.com/minsu3/cyclelist" target="blank">
+                    <img src={github} alt="" style={{ width: "35px" }} />
+                  </a>{" "}
+                  {/* <a href="https://github.com/minsu3/cyclelist" target="blank">
+                    <img src={tab} alt="" />
+                  </a> */}
+                </div>
+              </div>
+              <h5>eCommerce Website</h5>
+
+              <div className={styles.projectContainer}>
+                <img src={cyclist} alt="" className={styles.projectgif} />
+                <p className={styles.projectdescription}>
+                  A full stack eCommerce web application where users can login
+                  and choose the bicycle they are looking for and find the
+                  available bike retailers. This project incorporates Google
+                  Maps API to locate the bicycle retailers and successfully
+                  authenticates users onto the database.
+                </p>
+              </div>
+            </div>
+            <Button
+              variant="light"
+              href="https://github.com/minsu3?tab=repositories"
+            >
               <strong>Check out more projects!</strong>
             </Button>
           </div>
@@ -182,7 +185,7 @@ const Home = () => {
                 developer.
               </p>
               <a
-                href="https://drive.google.com/file/d/1A3-v0ji9tN1FRlaWokD6JuIBkcW9NtZJ/view?usp=sharing"
+                href="https://drive.google.com/file/d/171wKFxcZog6XdJWuxsybCuSrH6WEuIaN/view?usp=sharing"
                 target="blank"
               >
                 <Button variant="success">

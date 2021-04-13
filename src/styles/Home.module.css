@@ -179,6 +179,25 @@
   width: 50%;
   margin: 10px;
   background-color: #ddd;
+  height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .projectgif {
+    width: 50%;
+    margin: 10px;
+    background-color: #ddd;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .projectgif {
+    width: 50%;
+    margin: 10px;
+    background-color: #ddd;
+    height: 100%;
+  }
 }
 
 .projectdescription {
