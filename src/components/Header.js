@@ -1,7 +1,6 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "react-bootstrap/Navbar";
-// import Nav from "react-bootstrap/Nav";
+import Nav from "react-bootstrap/Nav";
 
 const Header = () => {
   return (
@@ -11,20 +10,11 @@ const Header = () => {
           MK
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        {/* <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="pull-right">
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto"> </Nav>
+          <Nav>
             <Nav.Link
-              href="/dev-portfolio/about"
-              style={{
-                fontSize: "18px",
-                paddingRight: "20px",
-                paddingLeft: "20px",
-              }}
-            >
-              About
-            </Nav.Link>
-            <Nav.Link
-              href="/dev-portfolio/projects"
+              href="/projects"
               style={{
                 fontSize: "18px",
                 paddingRight: "20px",
@@ -34,7 +24,7 @@ const Header = () => {
               Projects
             </Nav.Link>
             <Nav.Link
-              href="/dev-portfolio/connect"
+              href="/connect"
               style={{
                 fontSize: "18px",
                 paddingRight: "20px",
@@ -44,7 +34,7 @@ const Header = () => {
               Connect
             </Nav.Link>
           </Nav>
-        </Navbar.Collapse> */}
+        </Navbar.Collapse>
       </Navbar>
     </div>
   );
