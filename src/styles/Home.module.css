@@ -2,146 +2,93 @@
   box-sizing: border-box;
 }
 
-/* Navigation Bar */
-.header {
-  top: 0;
-  left: 0;
-  margin: 0;
-  font-size: 30px;
-  text-align: center;
-  background: white;
+.container {
+  background-color: rgb(35, 41, 94);
 }
 
 /* Main Title */
-.main .title {
-  font-size: 65px;
-  position: absolute;
-  top: 120px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ddd;
+.main {
+  font-size: 40px;
+  padding: 250px 150px !important;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
 }
 
-.main .sub {
-  font-size: 25px;
-  position: absolute;
-  top: 180px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ddd;
+.textContainer {
+  display: table-cell !important;
+  vertical-align: middle !important;
 }
 
-.main img {
-  display: block;
-  height: 300px;
-  width: 100%;
+.main h1 {
+  animation: fadeIn linear 1.5s !important;
+  -webkit-animation: fadeIn linear 1.5s !important;
+  -moz-animation: fadeIn linear 1.5s !important;
+  -o-animation: fadeIn linear 1.5s !important;
+  -ms-animation: fadeIn linear 1.5s !important;
 }
 
-.socialLogo {
-  display: flex;
-  position: absolute;
-  background-color: rgba(145, 145, 145, 0.7);
-  padding: 15px 10px 15px 10px;
-  border-radius: 50px;
-  top: 280px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.heyThere {
+  animation: fadeIn linear 1.5s !important;
+  -webkit-animation: fadeIn linear 1.5s !important;
+  -moz-animation: fadeIn linear 1.5s !important;
+  -o-animation: fadeIn linear 1.5s !important;
+  -ms-animation: fadeIn linear 1.5s !important;
 }
 
-.socialLogo img {
-  width: 35px;
-  height: 35px;
-  margin-right: 25px;
-  margin-left: 25px;
+.location {
+  animation: fadeIn linear 1.5s !important;
+  -webkit-animation: fadeIn linear 1.5s !important;
+  -moz-animation: fadeIn linear 1.5s !important;
+  -o-animation: fadeIn linear 1.5s !important;
+  -ms-animation: fadeIn linear 1.5s !important;
+  padding-top: 20px;
+  font-size: 20px;
 }
 
-@media screen and (max-width: 800px) {
-  .main .title {
-    font-size: 50px;
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.main span {
+  font-weight: 900;
+}
 
-  .main .sub {
-    font-size: 20px;
-    position: absolute;
-    top: 170px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.heyThere {
+  padding-bottom: 20px;
+  font-weight: 900;
+}
 
-  .main img {
-    display: block;
-    height: 250px;
-    width: 100%;
-  }
-
-  .socialLogo {
-    display: flex;
-    position: absolute;
-    background-color: rgba(145, 145, 145, 0.7);
-    padding: 15px 10px 15px 10px;
-    border-radius: 50px;
-    top: 250px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .socialLogo img {
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
-    margin-left: 15px;
+@media screen and (max-width: 1000px) {
+  .main {
+    padding: 250px 80px !important;
+    background-color: rgb(255, 255, 255);
+    font-size: 10px;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .main .title {
-    font-size: 42px;
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@media screen and (max-width: 600px) {
+  .main {
+    padding: 250px 50px !important;
+    background-color: rgb(255, 255, 255);
   }
-
-  .main .sub {
-    font-size: 20px;
-    position: absolute;
-    top: 170px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .main h1 {
+    font-size: 35px;
   }
+}
 
-  .main img {
-    display: block;
-    height: 200px;
-    width: 100%;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-
-  .socialLogo {
-    display: flex;
-    position: absolute;
-    background-color: rgba(145, 145, 145, 0.7);
-    padding: 15px 10px 15px 10px;
-    border-radius: 50px;
-    top: 250px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .socialLogo img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    margin-left: 10px;
+  100% {
+    opacity: 1;
   }
 }
 
 /* Main Content */
 .content {
   padding: 0 20px 20px 20px;
+  position: relative;
+}
+
+.content h2 {
+  font-weight: 900;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -182,27 +129,25 @@
   height: 100%;
 }
 
-@media screen and (max-width: 1000px) {
-  .projectgif {
-    width: 50%;
-    margin: 10px;
-    background-color: #ddd;
-    height: 100%;
+@media screen and (max-width: 700px) {
+  .projectContainer {
+    display: block;
+    width: 100%;
   }
-}
-
-@media screen and (max-width: 800px) {
   .projectgif {
-    width: 50%;
-    margin: 10px;
+    width: 100%;
+    margin: 0 auto;
     background-color: #ddd;
-    height: 100%;
+  }
+  .projectdescription {
+    width: 100%;
+    padding-right: 30px;
   }
 }
 
 .projectdescription {
-  width: 50%;
-  margin: 10px;
+  width: 100%;
+  margin: 20px;
 }
 
 .viewProject {
@@ -235,7 +180,7 @@
 .skillsimg .logos img {
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 60%;
 }
 
 /* Add a card effect for articles */
@@ -255,6 +200,23 @@
   margin-right: 0px;
   margin-bottom: 20px;
   margin-top: 20px;
+  text-align: center;
+}
+
+.aboutme img {
+  width: 70%;
+}
+
+.socialLogo {
+  padding: 15px;
+  text-align: center;
+}
+
+.socialLogo img {
+  width: 35px;
+  height: 35px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .technology {
@@ -264,6 +226,7 @@
   margin-right: 0px;
   margin-bottom: 20px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .social {
