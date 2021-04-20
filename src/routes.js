@@ -21,6 +21,5 @@ export default (
         <Connect />
       </Route>
     </Switch>
-    ;
   </div>
 );
