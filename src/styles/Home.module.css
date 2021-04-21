@@ -81,6 +81,47 @@
   }
 }
 
+.arrow {
+  margin-top: 20px;
+  user-select: none;
+  position: relative;
+  animation: example 2s infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 0px;
+    top: 20px;
+  }
+  50% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.arrow img {
+  width: 30px;
+  animation: fade linear 1.5s;
+  -webkit-animation: fade linear 1.5s;
+  -moz-animation: fade linear 1.5s;
+  -o-animation: fade linear 1.5s;
+  -ms-animation: fade linear 1.5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* Main Content */
 .content {
   padding: 0 20px 20px 20px;
@@ -200,11 +241,14 @@
   margin-right: 0px;
   margin-bottom: 20px;
   margin-top: 20px;
-  text-align: center;
 }
 
 .aboutme img {
   width: 70%;
+}
+
+.aboutmeWrapper {
+  text-align: center;
 }
 
 .socialLogo {
@@ -230,6 +274,7 @@
 }
 
 .social {
+  text-align: center;
   background-color: white;
   border-radius: 5px;
   padding: 20px;
