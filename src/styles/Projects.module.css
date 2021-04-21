@@ -32,17 +32,19 @@
   }
 }
 
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .subTitle {
   text-align: center;
   font-size: large;
 }
+
 .projects {
-  background-color: white;
-  border-radius: 5px;
+  border-bottom: 1px solid black;
   padding: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .projectContainer {

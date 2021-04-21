@@ -59,6 +59,7 @@ const Home = () => {
       <Helmet>
         <title>Minsu Kim</title>
       </Helmet>
+
       <div className={styles.container}>
         <div className={styles.main}>
           <div className={styles.textContainer}>
@@ -82,9 +83,11 @@ const Home = () => {
             />
           </div>
         </div>
+
         <div style={{ position: "sticky", top: 0, zIndex: 10 }}>
           <Header />
         </div>
+
         <div className={styles.content} id="scrollContent">
           <div>
             <div className={styles.leftcolumn}>
@@ -173,7 +176,11 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <Button variant="light" href="/projects">
+              <Button
+                variant="light"
+                href="https://github.com/minsu3?tab=repositories"
+                target="blank"
+              >
                 <strong>Check out more projects!</strong>
               </Button>
             </div>
@@ -350,6 +357,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
             <div
               style={{ textAlign: "center", color: "white", fontSize: "15px" }}
             >
