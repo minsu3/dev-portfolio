@@ -2,8 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
-
-import Form from "react-bootstrap/Form";
+import emailjs from "emailjs-com";
 import Button from "react-bootstrap/Button";
 
 import cyclist from "../images/cyclist.jpeg";
@@ -14,6 +13,7 @@ import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
 import tab from "../images/tab.png";
 import angellist from "../images/angellist.png";
+import downarrow from "../images/downarrow.png";
 
 import logohtml from "../images/fulls/html-5.png";
 import css from "../images/fulls/css.png";
@@ -33,6 +33,27 @@ import nginx from "../images/fulls/nginx.png";
 import digitalocean from "../images/fulls/digitalocean.png";
 
 const Home = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_xyq1hhe",
+        e.target,
+        "user_Wgusg7th9dfltKayhOucQ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
+
   return (
     <>
       <Helmet>
@@ -53,12 +74,18 @@ const Home = () => {
               <span>Santa Barbara, CA</span>. ☀️
             </div>
           </div>
-          <div className={styles.arrow}></div>
+          <div className={styles.arrow}>
+            <img
+              src={downarrow}
+              alt=""
+              style={{ userDrag: "none", userSelect: "none" }}
+            />
+          </div>
         </div>
         <div style={{ position: "sticky", top: 0, zIndex: 10 }}>
           <Header />
         </div>
-        <div className={styles.content}>
+        <div className={styles.content} id="scrollContent">
           <div>
             <div className={styles.leftcolumn}>
               <div className={styles.projects}>
@@ -153,21 +180,23 @@ const Home = () => {
 
             <div className={styles.rightcolumn}>
               <div className={styles.aboutme}>
-                <h2>About Me</h2>
-                <img src={headshot} alt="" />
-                <div className={styles.socialLogo}>
-                  <a
-                    href="https://www.linkedin.com/in/minsukim97/"
-                    target="blank"
-                  >
-                    <img src={linkedin} alt="LinkedIn Profile" />
-                  </a>
-                  <a href="https://github.com/minsu3" target="blank">
-                    <img src={github} alt="Github Profile" />
-                  </a>
-                  <a href="https://angel.co/u/minsu-kim-5" target="blank">
-                    <img src={angellist} alt="AngelList Profile" />
-                  </a>
+                <div className={styles.aboutmeWrapper}>
+                  <h2>About Me</h2>
+                  <img src={headshot} alt="" />
+                  <div className={styles.socialLogo}>
+                    <a
+                      href="https://www.linkedin.com/in/minsukim97/"
+                      target="blank"
+                    >
+                      <img src={linkedin} alt="LinkedIn Profile" />
+                    </a>
+                    <a href="https://github.com/minsu3" target="blank">
+                      <img src={github} alt="Github Profile" />
+                    </a>
+                    <a href="https://angel.co/u/minsu-kim-5" target="blank">
+                      <img src={angellist} alt="AngelList Profile" />
+                    </a>
+                  </div>
                 </div>
                 <p>
                   I am self-taught programmer and a graduate from UC Santa
@@ -177,14 +206,16 @@ const Home = () => {
                   experience in working for startups and satisfying client's
                   needs as a freelance developer.
                 </p>
-                <a
-                  href="https://drive.google.com/file/d/171wKFxcZog6XdJWuxsybCuSrH6WEuIaN/view?usp=sharing"
-                  target="blank"
-                >
-                  <Button variant="success">
-                    <strong>Resumé</strong>
-                  </Button>
-                </a>
+                <div style={{ textAlign: "center" }}>
+                  <a
+                    href="https://drive.google.com/file/d/171wKFxcZog6XdJWuxsybCuSrH6WEuIaN/view?usp=sharing"
+                    target="blank"
+                  >
+                    <Button className="btn btn-info">
+                      <strong>Resumé</strong>
+                    </Button>
+                  </a>
+                </div>
               </div>
 
               <div className={styles.technology}>
@@ -268,36 +299,70 @@ const Home = () => {
 
               <div className={styles.social}>
                 <div>
-                  <h3 style={{ marginBottom: "20px" }}>Let's Connect</h3>
-                  <Form>
-                    <Form.Group>
-                      <Form.Label>Full Name</Form.Label>
-                      <Form.Control />
-                    </Form.Group>
-                    <Form.Group controlId="formBasicEmail">
-                      <Form.Label>Email address</Form.Label>
-                      <Form.Control type="email" placeholder="Enter email" />
-                    </Form.Group>
+                  <h2 style={{ marginBottom: "20px" }}>Let's Connect</h2>
+                  <form onSubmit={sendEmail}>
+                    <div className="row ">
+                      <div className="col-12 form-group mx-auto">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Full Name"
+                          name="name"
+                        />
+                      </div>
+                      <div className="col-12 form-group pt-2 mx-auto">
+                        <input
+                          type="email"
+                          className="form-control"
+                          placeholder="Email Address"
+                          name="email"
+                        />
+                      </div>
+                      <div className="col-12 form-group pt-2 mx-auto">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Subject"
+                          name="subject"
+                        />
+                      </div>
 
-                    <div className="mb-3">
-                      <Form.File id="formcheck-api-regular">
-                        <Form.File.Label>Upload File</Form.File.Label>
-                        <Form.File.Input />
-                      </Form.File>
+                      <div className="col-12 form-group pt-2 mx-auto">
+                        <textarea
+                          className="form-control"
+                          id=""
+                          cols="30"
+                          rows="5"
+                          placeholder="Your message"
+                          name="message"
+                        ></textarea>
+                      </div>
+
+                      <div className="col-12 pt-2 mx-auto">
+                        <input
+                          type="submit"
+                          className="btn btn-info"
+                          value="Submit"
+                        ></input>
+                      </div>
                     </div>
-
-                    <Form.Group controlId="exampleForm.ControlTextarea1">
-                      <Form.Label>Send a Message</Form.Label>
-                      <Form.Control as="textarea" rows={3} />
-                    </Form.Group>
-                    <Button variant="primary" type="submit">
-                      Submit
-                    </Button>
-                  </Form>
+                  </form>
                 </div>
               </div>
             </div>
-            <div style={{ textAlign: "center", color: "white" }}>
+            <div
+              style={{ textAlign: "center", color: "white", fontSize: "15px" }}
+            >
+              Built from scratch with React.js
+            </div>
+            <div
+              style={{
+                textAlign: "center",
+                color: "white",
+                marginTop: "10px",
+                fontSize: "17px",
+              }}
+            >
               &copy; 2021 Minsu Kim All Rights Reserved.
             </div>
           </div>
