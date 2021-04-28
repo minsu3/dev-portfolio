@@ -56,16 +56,32 @@
 
 @media screen and (max-width: 1000px) {
   .main {
-    padding: 250px 80px !important;
+    display: flex;
     background-color: rgb(255, 255, 255);
+    height: 100vh;
+    padding: 0 80px !important;
     font-size: 10px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .main {
-    padding: 250px 50px !important;
+    display: flex;
     background-color: rgb(255, 255, 255);
+    height: 100vh;
+    padding: 0 20px !important;
+    font-size: 10px;
+  }
+  .main h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
   }
   .main h1 {
     font-size: 35px;
