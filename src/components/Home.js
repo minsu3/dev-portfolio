@@ -61,26 +61,28 @@ const Home = () => {
       </Helmet>
 
       <div className={styles.container}>
-        <div className={styles.main}>
-          <div className={styles.textContainer}>
-            <h1 className={styles.heyThere}>Hey there! 👋</h1>
-            <h1>
-              My name is <span>Minsu Kim</span>.
-            </h1>
-            <h1>
-              I design and build things for the <span>web</span>.
-            </h1>
-            <div className={styles.location}>
-              Freelance Web Developer and Designer based in{" "}
-              <span>Santa Barbara, CA</span>. ☀️
+        <div className={styles.mainWrapper}>
+          <div className={styles.main}>
+            <div className={styles.textContainer}>
+              <h1 className={styles.heyThere}>Hey there! 👋</h1>
+              <h1>
+                My name is <span>Minsu Kim</span>.
+              </h1>
+              <h1>
+                I design and build things for the <span>web</span>.
+              </h1>
+              <div className={styles.location}>
+                Freelance Web Developer and Designer based in{" "}
+                <span>Santa Barbara, CA</span>. ☀️
+              </div>
+              <div className={styles.arrow}>
+                <img
+                  src={downarrow}
+                  alt=""
+                  style={{ userDrag: "none", userSelect: "none" }}
+                />
+              </div>
             </div>
-          </div>
-          <div className={styles.arrow}>
-            <img
-              src={downarrow}
-              alt=""
-              style={{ userDrag: "none", userSelect: "none" }}
-            />
           </div>
         </div>
 
