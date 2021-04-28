@@ -10,7 +10,7 @@
 .main {
   display: flex;
   font-size: 40px;
-  padding: 250px 150px !important;
+  padding: 0 150px !important;
   background-color: rgb(255, 255, 255);
   height: 100vh;
 }
