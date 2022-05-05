@@ -1,9 +1,6 @@
 import * as React from "react";
 import styles from "../styles/Projects.module.css";
 import Header from "../components/Header";
-import cyclist from "../images/cyclist.jpeg";
-import habitico from "../images/habitico.jpeg";
-import hdw from "../images/hdw.png";
 import tab from "../images/tab.png";
 
 const Projects = () => {
@@ -26,7 +23,6 @@ const Projects = () => {
           <h5>Productivity App</h5>
 
           <div className={styles.projectContainer}>
-            <img src={habitico} alt="" className={styles.projectgif} />
             <br />
             <p className={styles.projectdescription}>
               "You'll like seeing that chain, especially when you get a few
@@ -52,7 +48,6 @@ const Projects = () => {
           <h5>Freelance for Client: Blair Meehan </h5>
 
           <div className={styles.projectContainer}>
-            <img src={hdw} alt="" className={styles.projectgif} />
             <br />
             <p className={styles.projectdescription}>
               Blair is a dating and relationship coach who helps men achieve
@@ -78,7 +73,6 @@ const Projects = () => {
           <h5>eCommerce Website</h5>
 
           <div className={styles.projectContainer}>
-            <img src={cyclist} alt="" className={styles.projectgif} />
             <p className={styles.projectdescription}>
               A full stack eCommerce web application where users can login and
               choose the bicycle they are looking for and find the available

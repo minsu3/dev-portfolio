@@ -5,14 +5,25 @@ import Nav from "react-bootstrap/Nav";
 const Header = () => {
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="/" style={{ fontSize: "28px" }}>
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar.Brand href="/" style={{ margin: "10px", fontSize: "28px" }}>
           MK
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"> </Nav>
           <Nav>
+            <Nav.Link
+              href="/connect"
+              style={{
+                fontSize: "18px",
+                paddingRight: "20px",
+                paddingLeft: "20px",
+              }}
+            >
+              Portfolio
+            </Nav.Link>
+
             <Nav.Link
               href="/projects"
               style={{
@@ -23,6 +34,7 @@ const Header = () => {
             >
               Projects
             </Nav.Link>
+
             <Nav.Link
               href="/connect"
               style={{
