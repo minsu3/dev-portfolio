@@ -1,1 +1,1 @@
-Minsu Kim's Dev Portfolio
+Minsu Kim's Portfolio

@@ -3,139 +3,7 @@
 }
 
 .container {
-  background-color: rgb(35, 41, 94);
-}
-
-/* Main Title */
-.main {
-  display: flex;
-  font-size: 40px;
-  padding: 0 150px !important;
-  background-color: rgb(255, 255, 255);
-  height: 100vh;
-}
-
-.textContainer {
-  margin: auto 0;
-}
-
-.main h1 {
-  animation: fadeIn linear 1.5s !important;
-  -webkit-animation: fadeIn linear 1.5s !important;
-  -moz-animation: fadeIn linear 1.5s !important;
-  -o-animation: fadeIn linear 1.5s !important;
-  -ms-animation: fadeIn linear 1.5s !important;
-}
-
-.heyThere {
-  animation: fadeIn linear 1.5s !important;
-  -webkit-animation: fadeIn linear 1.5s !important;
-  -moz-animation: fadeIn linear 1.5s !important;
-  -o-animation: fadeIn linear 1.5s !important;
-  -ms-animation: fadeIn linear 1.5s !important;
-}
-
-.location {
-  animation: fadeIn linear 1.5s !important;
-  -webkit-animation: fadeIn linear 1.5s !important;
-  -moz-animation: fadeIn linear 1.5s !important;
-  -o-animation: fadeIn linear 1.5s !important;
-  -ms-animation: fadeIn linear 1.5s !important;
-  padding-top: 20px;
-  font-size: 20px;
-}
-
-.main span {
-  font-weight: 900;
-}
-
-.heyThere {
-  padding-bottom: 20px;
-  font-weight: 900;
-}
-
-@media screen and (max-width: 1000px) {
-  .main {
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    height: 100vh;
-    padding: 0 80px !important;
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .main {
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    height: 100vh;
-    padding: 0 20px !important;
-    font-size: 10px;
-  }
-  .main h1 {
-    font-size: 35px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .main {
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    height: 100vh;
-  }
-  .main h1 {
-    font-size: 35px;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.arrow {
-  margin-top: 20px;
-  user-select: none;
-  position: relative;
-  animation: example 2s infinite;
-  animation-delay: 1.5s;
-}
-
-@keyframes example {
-  0% {
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    left: 0px;
-    top: 20px;
-  }
-  50% {
-    left: 0px;
-    top: 0px;
-  }
-}
-
-.arrow img {
-  width: 30px;
-  animation: fade linear 1.5s;
-  -webkit-animation: fade linear 1.5s;
-  -moz-animation: fade linear 1.5s;
-  -o-animation: fade linear 1.5s;
-  -ms-animation: fade linear 1.5s;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  background-color: white;
 }
 
 /* Main Content */
@@ -148,33 +16,12 @@
   font-weight: 900;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 70%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 30%;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #ddd;
-  width: 100%;
-  padding: 20px;
-  height: 200px;
-}
-
 .titleWrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.projectContainer {
+.descriptionContainer {
   display: flex;
   align-content: space-between;
 }
@@ -187,7 +34,7 @@
 }
 
 @media screen and (max-width: 700px) {
-  .projectContainer {
+  .descriptionContainer {
     display: block;
     width: 100%;
   }
@@ -196,13 +43,13 @@
     margin: 0 auto;
     background-color: #ddd;
   }
-  .projectdescription {
+  .description {
     width: 100%;
     padding-right: 30px;
   }
 }
 
-.projectdescription {
+.description {
   width: 100%;
   margin: 20px;
 }
@@ -241,8 +88,16 @@
 }
 
 /* Add a card effect for articles */
+.projectContainer {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: auto auto;
+  background-color: #bbb;
+  padding: 10px;
+}
+
 .projects {
-  background-color: white;
+  background-color: rgb(136, 136, 136);
   border-radius: 5px;
   padding: 20px;
   margin-right: 20px;
